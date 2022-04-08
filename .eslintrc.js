@@ -1,49 +1,30 @@
 /* eslint-disable no-undef */
 module.exports = {
-  'env': {
-    'browser': true,
-    'es2021': true,
+  env: {
+    browser: true,
+    es2021: true,
   },
-  'extends': [
-    'eslint:recommended',
-    'plugin:react/recommended',
-  ],
-  'settings': {
-    'react': {
-      'version': 'latest',
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'next'],
+  settings: {
+    react: {
+      version: 'latest',
     },
   },
-  'parserOptions': {
-    'ecmaFeatures': {
-      'jsx': true,
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
-    'ecmaVersion': 12,
-    'sourceType': 'module',
+    ecmaVersion: 12,
+    sourceType: 'module',
   },
-  'plugins': [
-    'react',
-  ],
-  'rules': {
-    'indent': [
-      'error',
-      2,
-      { 'SwitchCase': 1 },
-    ],
-    'linebreak-style': [
-      'error',
-      'unix',
-    ],
-    'quotes': [
-      'error',
-      'single',
-    ],
-    'semi': [
-      'error',
-      'always',
-    ],
-    'comma-dangle': [
-      'error',
-      'only-multiline',
-    ],
+  plugins: ['react'],
+  rules: {
+    indent: ['error', 2, { SwitchCase: 1 }],
+    'linebreak-style': ['error', 'unix'],
+    quotes: ['error', 'single'],
+    semi: ['error', 'always'],
+    'comma-dangle': ['error', 'only-multiline'],
+    'react/no-unescaped-entities': 'off',
+    '@next/next/no-page-custom-font': 'off',
   },
 };
