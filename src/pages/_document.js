@@ -19,17 +19,14 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#ffffff" />
-          <meta
-            name="description"
-            content="A modern design system for your new landing and web pages."
-          />
+          <meta name="description" content="Mockup" />
           <meta
             name="robots"
             content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
           />
           <meta property="og:locale" content="en_US" />
           <meta property="og:type" content="website" />
-          <meta
+          {/* <meta
             property="og:image"
             content="https://assets.maccarianagency.com/screenshots/the-front/social.png"
           />
@@ -44,11 +41,11 @@ export default class MyDocument extends Document {
           <meta
             property="og:url"
             content="https://thefront.maccarianagency.com/"
-          />
+          /> */}
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href='https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap'
-            rel='stylesheet'
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap"
+            rel="stylesheet"
           />
         </Head>
         <body>
@@ -94,11 +91,12 @@ MyDocument.getInitialProps = async (ctx) => {
   ctx.renderPage = () =>
     originalRenderPage({
       // Take precedence over the CacheProvider in our custom _app.js
-      enhanceComponent: (Component) => (props) => (
-        <CacheProvider value={cache}>
-          <Component {...props} />
-        </CacheProvider>
-      ),
+      enhanceComponent: (Component) => (props) =>
+        (
+          <CacheProvider value={cache}>
+            <Component {...props} />
+          </CacheProvider>
+        ),
     });
 
   const initialProps = await Document.getInitialProps(ctx);
@@ -115,9 +113,6 @@ MyDocument.getInitialProps = async (ctx) => {
   return {
     ...initialProps,
     // Styles fragment is rendered after the app and page rendering finish.
-    styles: [
-      ...React.Children.toArray(initialProps.styles),
-      ...emotionStyleTags,
-    ],
+    styles: [...React.Children.toArray(initialProps.styles), ...emotionStyleTags],
   };
 };
