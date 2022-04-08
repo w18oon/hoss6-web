@@ -21,32 +21,17 @@ const Teaser = () => {
           alignItems={'center'}
           xs={12}
           md={6}
-          data-aos={isMd ? 'fade-right' : 'fade-up'}
+        // data-aos={isMd ? 'fade-right' : 'fade-up'}
         >
           <Box>
-            <Typography
-              sx={{
-                textTransform: 'uppercase',
-                fontWeight: 'medium',
-              }}
-              gutterBottom
-              color={'secondary'}
-            >
-              Flexible options
-            </Typography>
             <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
-              Don't worry about{' '}
+              Lorem ipsum dolor sit amet{' '}
               <Typography color="primary" variant="inherit" component="span">
-                pricing
+                consectetur
               </Typography>
             </Typography>
             <Typography variant={'h6'} component={'p'} color={'text.secondary'}>
-              Three products that can be used independently or combined together
-              for your company’s needs.
-              <br />
-              Don't listen to what they say go and see.
-              <br />
-              Join the biggest community of people.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </Typography>
           </Box>
         </Grid>
@@ -62,7 +47,7 @@ const Teaser = () => {
             <Box
               component={'img'}
               src={
-                'https://assets.maccarianagency.com/svg/illustrations/drawkit-illustration5.svg'
+                'https://assets.maccarianagency.com/svg/illustrations/drawkit-illustration4.svg'
               }
               width={1}
               height={1}

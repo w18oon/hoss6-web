@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 
 const mock = [
   {
-    title: 'Built for developers',
+    title: 'หัวข้อ # 1',
     subtitle:
       'theFront is built to make your life easier. Variables, build tooling, documentation, and reusable components.',
     icon: (
@@ -29,7 +29,7 @@ const mock = [
     ),
   },
   {
-    title: 'Designed to be modern',
+    title: 'หัวข้อ # 2',
     subtitle:
       'Designed with the latest design trends in mind. theFront feels modern, minimal, and beautiful.',
     icon: (
@@ -51,7 +51,7 @@ const mock = [
     ),
   },
   {
-    title: 'Documentation for everything',
+    title: 'หัวข้อ # 3',
     subtitle:
       'We\'ve written extensive documentation for components and tools, so you never have to reverse engineer anything.',
     icon: (
@@ -84,10 +84,10 @@ const Services = () => {
             <Box
               width={1}
               height={1}
-              data-aos={'fade-up'}
-              data-aos-delay={i * 100}
-              data-aos-offset={100}
-              data-aos-duration={600}
+            // data-aos={'fade-up'}
+            // data-aos-delay={i * 100}
+            // data-aos-offset={100}
+            // data-aos-duration={600}
             >
               <Box
                 display={'flex'}
@@ -113,7 +113,7 @@ const Services = () => {
                   {item.title}
                 </Typography>
                 <Typography align={'center'} color="text.secondary">
-                  {item.subtitle}
+                  {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
                 </Typography>
               </Box>
             </Box>

@@ -11,19 +11,17 @@ import Grid from '@mui/material/Grid';
 const mock = [
   {
     title: 300,
-    subtitle:
-      '300 + component compositions, which will help you to build any page easily.',
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
     suffix: '+',
   },
   {
     title: 45,
-    subtitle:
-      '45 + landing and supported pages to Build a professional website.',
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
     suffix: '+',
   },
   {
     title: 99,
-    subtitle: '99% of our customers rated 5-star our themes over 5 years.',
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
     suffix: '%',
   },
 ];
@@ -50,12 +48,10 @@ const Features = () => {
         <Grid item xs={12} md={6} data-aos={isMd ? 'fade-right' : 'fade-up'}>
           <Box marginBottom={4}>
             <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
-              Stay focused on your business. Let us handle the design.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </Typography>
             <Typography component={'p'} color={'text.secondary'}>
-              You have a business to run. Stop worring about cross-browser bugs,
-              designing new pages, keeping your components up to date. Let us do
-              that for you.
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Typography>
           </Box>
           <Box>

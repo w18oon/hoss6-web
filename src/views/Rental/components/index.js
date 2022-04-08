@@ -1,6 +1,7 @@
 export { default as Advantages } from './Advantages';
 export { default as Articles } from './Articles';
 export { default as AskExpert } from './AskExpert';
+export { default as FeaturedCategories } from './FeaturedCategories';
 export { default as FeaturedProperties } from './FeaturedProperties';
 export { default as Hero } from './Hero';
 export { default as Partners } from './Partners';

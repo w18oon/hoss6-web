@@ -27,6 +27,30 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       title: 'หน้าแรก',
     },
     {
+      href: '/about',
+      title: 'เกี่ยวกับเรา',
+    },
+    {
+      href: '/how',
+      title: 'ใช้ยังไง',
+    },
+    {
+      href: '/post',
+      title: 'โพสต์งาน',
+    },
+    {
+      href: '/faq',
+      title: 'คำถามที่พบบ่อย',
+    },
+    {
+      href: '/help',
+      title: 'ต้องการความช่วยเหลือ',
+    },
+    {
+      href: '/contact',
+      title: 'ติดต่อเรา',
+    },
+    {
       href: '/signin-simple',
       title: 'เข้าสู่ระบบ',
     },

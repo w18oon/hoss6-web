@@ -6,19 +6,19 @@ import ListItemText from '@mui/material/ListItemText';
 
 const mock = [
   {
-    title: 'Coworking communities',
+    title: 'Feature # 1',
     subtitle:
-      'Connect in spaces designed to bring incredible people together. Learn with them and take your project to new heights.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
   },
   {
-    title: 'Flexible contracts',
+    title: 'Feature # 2',
     subtitle:
-      'Stay as little as 3 months with rolling contracts. Like it here? This is your space, so stay as long as you want.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
   },
   {
-    title: 'All inclusive',
+    title: 'Feature # 3',
     subtitle:
-      'Monthly fee covers everything you need hassle free. Keep cool and focus on what matters to you.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
   },
 ];
 

@@ -59,37 +59,37 @@ const Content = () => {
     <Box>
       <Box marginBottom={6}>
         <FaqGroupItem
-          title={'Basics'}
+          // title={'Basics'}
           items={[
             {
-              title: 'Can I purchase a gift certificate?',
+              title: 'Lorem ipsum dolor sit amet ?',
               subtitle:
                 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
             },
             {
-              title: 'What is your return policy?',
+              title: 'consectetur adipiscing elit ?',
               subtitle:
                 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
             },
             {
-              title: 'Do you sell gift cards?',
+              title: 'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?',
               subtitle:
                 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
             },
             {
-              title: 'Can I change plans later on?',
+              title: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?',
               subtitle:
                 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
             },
             {
-              title: 'Is this a subscription service?',
+              title: 'Duis aute irure dolor in reprehenderit?',
               subtitle:
                 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
             },
           ]}
         />
       </Box>
-      <Box marginBottom={6}>
+      {/* <Box marginBottom={6}>
         <FaqGroupItem
           title={'Account & settings'}
           items={[
@@ -152,7 +152,7 @@ const Content = () => {
             },
           ]}
         />
-      </Box>
+      </Box> */}
     </Box>
   );
 };

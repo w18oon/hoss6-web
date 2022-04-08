@@ -12,9 +12,8 @@ import Avatar from '@mui/material/Avatar';
 
 const mock = [
   {
-    image: 'https://assets.maccarianagency.com/backgrounds/img13.jpg',
-    description:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem',
+    image: 'HtBlQdxfG9k.jpg',
+    description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem',
     title: 'Eiusmod tempor incididunt',
     author: {
       name: 'Clara Bertoletti',
@@ -34,8 +33,7 @@ const mock = [
   },
   {
     image: 'https://assets.maccarianagency.com/backgrounds/img17.jpg',
-    description:
-      'Qui blanditiis praesentium voluptatum deleniti atque corrupti',
+    description: 'Qui blanditiis praesentium voluptatum deleniti atque corrupti',
     title: 'Unde omnis iste natus',
     author: {
       name: 'Chary Smith',
@@ -49,32 +47,14 @@ const FeaturedArticles = () => {
   const theme = useTheme();
   return (
     <Box>
-      <Box
-        display={'flex'}
-        justifyContent={'space-between'}
-        alignItems={{ xs: 'flex-start', sm: 'center' }}
-        flexDirection={{ xs: 'column', sm: 'row' }}
-        marginBottom={4}
-      >
-        <Box>
-          <Typography fontWeight={700} variant={'h4'} gutterBottom>
-            Featured stories
-          </Typography>
-          <Typography color={'text.secondary'}>
-            Here’s what we’ve been up to recently.
-          </Typography>
-        </Box>
-        <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
-          <Box
-            component={Button}
-            variant="outlined"
-            color="primary"
-            size="large"
-            marginLeft={2}
-          >
-            View all
-          </Box>
-        </Box>
+      <Box marginBottom={4}>
+        <Typography fontWeight={700} variant={'h4'} gutterBottom>
+          โพสต์งาน
+        </Typography>
+        <Typography color={'text.secondary'}>
+          คำบรรยาย : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+        </Typography>
       </Box>
       <Grid container spacing={4}>
         {mock.map((item, i) => (
@@ -106,10 +86,7 @@ const FeaturedArticles = () => {
                   sx={{
                     height: { xs: 300, md: 360 },
                     position: 'relative',
-                    filter:
-                      theme.palette.mode === 'dark'
-                        ? 'brightness(0.7)'
-                        : 'none',
+                    filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
                   }}
                 />
                 <Box
@@ -128,32 +105,19 @@ const FeaturedArticles = () => {
                     <Typography variant={'h6'} gutterBottom>
                       {item.title}
                     </Typography>
-                    <Typography color="text.secondary">
-                      {item.description}
-                    </Typography>
+                    <Typography color="text.secondary">{item.description}</Typography>
                   </Box>
                   <Box flexGrow={1} />
                   <Box padding={2} display={'flex'} flexDirection={'column'}>
                     <Box marginBottom={2}>
                       <Divider />
                     </Box>
-                    <Box
-                      display={'flex'}
-                      justifyContent={'space-between'}
-                      alignItems={'center'}
-                    >
+                    <Box display={'flex'} justifyContent={'space-between'} alignItems={'center'}>
                       <Box display={'flex'} alignItems={'center'}>
-                        <Avatar
-                          src={item.author.avatar}
-                          sx={{ marginRight: 1 }}
-                        />
-                        <Typography color={'text.secondary'}>
-                          {item.author.name}
-                        </Typography>
+                        <Avatar src={item.author.avatar} sx={{ marginRight: 1 }} />
+                        <Typography color={'text.secondary'}>{item.author.name}</Typography>
                       </Box>
-                      <Typography color={'text.secondary'}>
-                        {item.date}
-                      </Typography>
+                      <Typography color={'text.secondary'}>{item.date}</Typography>
                     </Box>
                   </Box>
                 </Box>

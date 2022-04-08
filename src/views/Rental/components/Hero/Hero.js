@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
+// import Divider from '@mui/material/Divider';
 import InputAdornment from '@mui/material/InputAdornment';
 import Container from 'components/Container';
 
@@ -15,10 +15,11 @@ const Hero = () => {
 
   return (
     <Box
-      minHeight={300}
+      minHeight={{ xs: 300, sm: 600 }}
       height={'auto'}
       position={'relative'}
       sx={{
+        backgroundColor: theme.palette.alternate.main,
         background: 'url(/L7EwHkq1B2s.jpg) no-repeat center',
         backgroundSize: 'cover',
         marginTop: -13,
@@ -34,13 +35,15 @@ const Hero = () => {
           bottom: 0,
           width: 1,
           height: 1,
-          background: alpha(theme.palette.primary.dark, 0.3),
+          background: alpha('#161c2d', 0.4),
           zIndex: 1,
         }}
       />
       <Container position={'relative'} zIndex={2}>
         <Box>
-          <Box marginBottom={4} data-aos="fade-up">
+          <Box marginBottom={4}
+          // data-aos="fade-up"
+          >
             <Typography
               variant="h3"
               gutterBottom
@@ -49,7 +52,7 @@ const Hero = () => {
                 color: 'common.white',
               }}
             >
-              Need help selecting a rental service provider?
+              Lorem ipsum dolor sit amet
             </Typography>
             <Typography
               variant="h6"
@@ -60,9 +63,7 @@ const Hero = () => {
                 color: 'common.white',
               }}
             >
-              Let us guide you home.
-              <br />
-              Find the house of your dreams
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             </Typography>
           </Box>
           <Box
@@ -70,7 +71,7 @@ const Hero = () => {
             width={1}
             component={Card}
             boxShadow={1}
-            data-aos="fade-up"
+          // data-aos="fade-up"
           >
             <form noValidate autoComplete="off">
               <Box display="flex" flexDirection={{ xs: 'column', md: 'row' }}>
@@ -120,46 +121,11 @@ const Hero = () => {
                     size="medium"
                     fullWidth
                   >
-                    Get started
+                    ค้นหา
                   </Button>
                 </Box>
               </Box>
             </form>
-            <Box marginY={4} marginX={{ xs: -3, sm: -6 }}>
-              <Divider />
-            </Box>
-            <Box>
-              <Typography component="p" variant="body2" align="left">
-                By clicking on "Get Started" you agree to our{' '}
-                <Box
-                  component="a"
-                  href=""
-                  color={theme.palette.text.primary}
-                  fontWeight={'700'}
-                >
-                  Privacy Policy
-                </Box>
-                ,{' '}
-                <Box
-                  component="a"
-                  href=""
-                  color={theme.palette.text.primary}
-                  fontWeight={'700'}
-                >
-                  Data Policy
-                </Box>{' '}
-                and{' '}
-                <Box
-                  component="a"
-                  href=""
-                  color={theme.palette.text.primary}
-                  fontWeight={'700'}
-                >
-                  Cookie Policy
-                </Box>
-                .
-              </Typography>
-            </Box>
           </Box>
         </Box>
       </Container>

@@ -5,15 +5,16 @@ import Main from 'layouts/Main';
 import Container from 'components/Container';
 
 import {
-  Advantages,
+  // Advantages,
   Articles,
-  AskExpert,
-  FeaturedProperties,
+  // AskExpert,
+  FeaturedCategories,
+  // FeaturedProperties,
   Hero,
-  Partners,
-  Places,
+  // Partners,
+  // Places,
   Reviews,
-  Search,
+  // Search,
   Teaser,
 } from './components';
 
@@ -23,7 +24,7 @@ const Rental = () => {
       <Hero />
       <Box bgcolor={'alternate.main'}>
         <Container>
-          <Search />
+          <FeaturedCategories />
         </Container>
       </Box>
       <Container>
@@ -32,20 +33,20 @@ const Rental = () => {
       <Container sx={{ paddingTop: '0 !important' }}>
         <Articles />
       </Container>
-      <Box bgcolor={'alternate.main'}>
+      {/* <Box bgcolor={'alternate.main'}>
         <Container>
           <FeaturedProperties />
         </Container>
       </Box>
       <Container>
         <Places />
-      </Container>
+      </Container> */}
       <Box bgcolor={'alternate.main'}>
         <Container>
           <Reviews />
         </Container>
       </Box>
-      <Container>
+      {/* <Container>
         <Partners />
       </Container>
       <Box bgcolor={'alternate.main'}>
@@ -55,7 +56,7 @@ const Rental = () => {
       </Box>
       <Container>
         <AskExpert />
-      </Container>
+      </Container> */}
     </Main>
   );
 };

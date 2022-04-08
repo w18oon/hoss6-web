@@ -7,7 +7,8 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
+// import Link from '@mui/material/Link';
+import Link from 'next/link';
 
 const validationSchema = yup.object({
   firstName: yup
@@ -155,10 +156,7 @@ const Form = () => {
                 <Typography variant={'subtitle2'}>
                   Already have an account?{' '}
                   <Link
-                    component={'a'}
-                    color={'primary'}
                     href={'/signin-simple'}
-                    underline={'none'}
                   >
                     Login.
                   </Link>

@@ -25,8 +25,8 @@ const Hero = () => {
                 fontWeight: 700,
               }}
             >
-              Develop anything your{' '}
-              <Typography
+              ใช้ยังไง
+              {/* <Typography
                 component={'span'}
                 variant={'inherit'}
                 color={'primary'}
@@ -38,7 +38,7 @@ const Hero = () => {
                 }}
               >
                 business needs.
-              </Typography>
+              </Typography> */}
             </Typography>
           </Box>
           <Box marginBottom={3}>
@@ -48,11 +48,10 @@ const Hero = () => {
               color="text.secondary"
               sx={{ fontWeight: 400 }}
             >
-              theFront will make your product look modern and professional while
-              saving you precious time.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Typography>
           </Box>
-          <Box
+          {/* <Box
             display="flex"
             flexDirection={{ xs: 'column', sm: 'row' }}
             alignItems={{ xs: 'stretched', sm: 'flex-start' }}
@@ -84,7 +83,7 @@ const Hero = () => {
                 View documentation
               </Button>
             </Box>
-          </Box>
+          </Box> */}
         </Box>
       </Grid>
       <Grid item xs={12} md={6}>

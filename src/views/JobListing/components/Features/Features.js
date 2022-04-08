@@ -42,21 +42,18 @@ const Features = () => {
           <Box>
             <Box marginBottom={2}>
               <Typography variant={'h4'} sx={{ fontWeight: 700 }} gutterBottom>
-                Learn with theFront
+                Lorem ipsum dolor sit amet,
               </Typography>
               <Typography color="text.secondary" variant={'h6'}>
-                Send one-off and automated email, push, and in-app messages to
-                people.
-                <br />
-                Create better stories.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </Typography>
             </Box>
             <Grid container spacing={1}>
               {[
-                'Lifetime updates & introduction and working',
-                'Tech support & mutual funds',
-                'Tons of assets & lifetime updates',
-                'Integration ready & tech support',
+                'Lorem ipsum dolor sit amet',
+                'consectetur adipiscing elit',
+                'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+                'Ut enim ad minim veniam',
               ].map((item, i) => (
                 <Grid item xs={12} key={i}>
                   <Box

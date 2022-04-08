@@ -7,12 +7,17 @@ import Link from '@mui/material/Link';
 const mock = [
   {
     href: '#',
-    title: 'Blog',
+    title: 'หน้าแรก',
     isActive: false,
   },
   {
     href: '#',
-    title: 'Search Results',
+    title: 'หมวดหมู่งาน',
+    isActive: false,
+  },
+  {
+    href: '#',
+    title: 'งานทั่วไป',
     isActive: true,
   },
 ];

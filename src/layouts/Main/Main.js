@@ -8,7 +8,7 @@ import AppBar from '@mui/material/AppBar';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 import Container from 'components/Container';
-import TopNav from 'components/TopNav';
+// import TopNav from 'components/TopNav';
 
 import { Topbar, Sidebar, Footer } from './components';
 
@@ -60,12 +60,12 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
           />
         </Container>
       </AppBar>
-      <Sidebar
+      {/* <Sidebar
         onClose={handleSidebarClose}
         open={open}
         variant="temporary"
         pages={pages}
-      />
+      /> */}
       <main>
         {children}
         <Divider />

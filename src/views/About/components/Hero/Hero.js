@@ -76,18 +76,7 @@ const Hero = () => {
               textTransform: 'uppercase',
             }}
           >
-            About us
-          </Typography>
-          <Typography
-            variant="h6"
-            component="p"
-            color="text.primary"
-            sx={{
-              color: 'common.white',
-            }}
-          >
-            We are founded by a leading academic and researcher in the field of
-            Industrial Systems Engineering.
+            {'เกี่ยวกับเรา'}
           </Typography>
         </Box>
       </Container>
