@@ -24,7 +24,7 @@ module.exports = {
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
     'comma-dangle': ['error', 'only-multiline'],
-    // 'react/no-unescaped-entities': 'off',
-    // '@next/next/no-page-custom-font': 'off',
+    'react/no-unescaped-entities': 'off',
+    '@next/next/no-page-custom-font': 'off',
   },
 };
