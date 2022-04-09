@@ -7,6 +7,21 @@ import Link from 'next/link';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
+const pages = [
+  // {
+  //   href: '/',
+  //   title: 'หน้าแรก',
+  // },
+  {
+    href: '/faq',
+    title: 'คำถามที่พบบ่อย',
+  },
+  {
+    href: '/contact',
+    title: 'ติดต่อเรา',
+  },
+];
+
 const Footer = () => {
   const theme = useTheme();
   const { mode } = theme.palette;
@@ -21,12 +36,7 @@ const Footer = () => {
           width={1}
           flexDirection={{ xs: 'column', sm: 'row' }}
         >
-          <Box
-            display={'flex'}
-            href="/"
-            title="theFront"
-            width={80}
-          >
+          <Box display={'flex'} href="/" title="theFront" width={80}>
             {/* <Box
               component={'img'}
               src={
@@ -37,23 +47,16 @@ const Footer = () => {
               height={1}
               width={1}
             /> */}
-            <Typography>
-              {'โลโก้'}
-            </Typography>
+            <Typography>{'โลโก้'}</Typography>
           </Box>
           <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
-            <Link href={'/'}>
-              <Box
-                display={'flex'}
-                alignItems={'center'}
-                aria-describedby={'test'}
-                sx={{ cursor: 'pointer' }}
-              >
-                <Typography>
-                  {'หน้าแรก'}
-                </Typography>
+            {pages.map((page, i) => (
+              <Box marginTop={1} marginRight={2} key={i} sx={{ cursor: 'pointer' }}>
+                <Link href={page.href} passHref>
+                  <Typography>{page.title}</Typography>
+                </Link>
               </Box>
-            </Link>
+            ))}
             {/* <Box marginTop={1} marginRight={2}>
               <Link
                 underline="none"
@@ -92,25 +95,14 @@ const Footer = () => {
         </Box>
       </Grid>
       <Grid item xs={12}>
-        <Typography
-          align={'center'}
-          variant={'subtitle2'}
-          color="text.secondary"
-          gutterBottom
-        >
+        <Typography align={'center'} variant={'subtitle2'} color="text.secondary" gutterBottom>
           &copy; 2021, All rights reserved
           {/* &copy; theFront. 2021, Maccarian. All rights reserved */}
         </Typography>
-        <Typography
-          align={'center'}
-          variant={'caption'}
-          color="text.secondary"
-          component={'p'}
-        >
-          When you visit or interact with our sites, services or tools, we or
-          our authorised service providers may use cookies for storing
-          information to help provide you with a better, faster and safer
-          experience and for marketing purposes.
+        <Typography align={'center'} variant={'caption'} color="text.secondary" component={'p'}>
+          When you visit or interact with our sites, services or tools, we or our authorised service
+          providers may use cookies for storing information to help provide you with a better,
+          faster and safer experience and for marketing purposes.
         </Typography>
       </Grid>
     </Grid>

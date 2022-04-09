@@ -38,37 +38,31 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       href: '/post',
       title: 'โพสต์งาน',
     },
-    {
-      href: '/faq',
-      title: 'คำถามที่พบบ่อย',
-    },
+    // {
+    //   href: '/faq',
+    //   title: 'คำถามที่พบบ่อย',
+    // },
     {
       href: '/help',
       title: 'ต้องการความช่วยเหลือ',
     },
-    {
-      href: '/contact',
-      title: 'ติดต่อเรา',
-    },
+    // {
+    //   href: '/contact',
+    //   title: 'ติดต่อเรา',
+    // },
     {
       href: '/signin-simple',
       title: 'เข้าสู่ระบบ',
     },
+    {
+      href: '/me',
+      title: 'โปรไฟล์ของฉัน',
+    },
   ];
 
   return (
-    <Box
-      display={'flex'}
-      justifyContent={'space-between'}
-      alignItems={'center'}
-      width={1}
-    >
-      <Box
-        display={'flex'}
-        href="/"
-        title="theFront"
-        width={{ xs: 100, md: 120 }}
-      >
+    <Box display={'flex'} justifyContent={'space-between'} alignItems={'center'} width={1}>
+      <Box display={'flex'} href="/" title="theFront" width={{ xs: 100, md: 120 }}>
         {/* <Box
           component={'img'}
           src={
@@ -79,9 +73,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
           height={1}
           width={1}
         /> */}
-        <Typography color={colorInvert ? 'common.white' : 'text.primary'}>
-          {'โลโก้'}
-        </Typography>
+        <Typography color={colorInvert ? 'common.white' : 'text.primary'}>{'โลโก้'}</Typography>
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         {/* <Box>
@@ -141,9 +133,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
                 aria-describedby={'test'}
                 sx={{ cursor: 'pointer' }}
               >
-                <Typography
-                  color={colorInvert ? 'common.white' : 'text.primary'}
-                >
+                <Typography color={colorInvert ? 'common.white' : 'text.primary'}>
                   {menuItem.title}
                 </Typography>
               </Box>
@@ -153,12 +143,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
 
         <Box marginLeft={4}>
           <Link href={'/signup-simple'}>
-            <Button
-              variant="contained"
-              color="primary"
-              component="a"
-              size="large"
-            >
+            <Button variant="contained" color="primary" component="a" size="large">
               สมัครสมาชิก
             </Button>
           </Link>
